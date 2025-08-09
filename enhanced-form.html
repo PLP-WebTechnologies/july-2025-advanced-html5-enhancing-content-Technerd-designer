@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School registration</title>
+</head>
+<body>
+    <h1>CODING ACADEMY</h1>
+    <p>
+        Welcome to Coding Academy! Home of coding excellence, where you come in a beginner but leave as an excellent pro!
+    </p>
+    <video controls width="650" height="350" autoplay muted>
+        <source src="lesson 1.mp4">
+    </video>
+    <video controls width="670" height="350" autoplay muted>
+        <source src="lesson 2.mp4">>
+    </video>
+    <p>Our courses offer knowledge that opens opportunities in careers such as:
+       <ul>
+        <li>Front end and Backend development</li>
+        <li>Fullstack development</li>
+        <li>Software engineering</li>
+        <li>Computer programming</li>
+       </ul> 
+       <p>And so much more!</p>
+    </p>
+    <img src="student.jpg" alt="School student" width="450" height="200">
+    <img src="students.jpg" alt="School student" width="450" height="200">
+    <img src="comp class.jpg" alt="School student" width="410" height="200">
+    <p>Here are some of the courses we offer:</p>
+    <table border="1" width="800">
+        <thead>
+            <tr>
+                <th>Course</th>
+                <th>Duration</th>
+                <th>Fee</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Software Engineering</td>
+                <td>4 weeks</td>
+                <td>Ksh10,000</td>
+            </tr>
+            <tr>
+                <td>Web Development</td>
+                <td>8 weeks</td>
+                <td>Ksh15,000</td>
+            </tr>
+            <tr>
+                <td>Database design</td>
+                <td>8 weeks</td>
+                <td>Ksh15,000</td>
+            </tr>
+            <tr>
+                <td>Python programming</td>
+                <td>8 weeks</td>
+                <td>Ksh20,000</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>Please fill in the registration form below and book your slot now. We look forward to hearing from you!</p>
+    
+    <form action="">
+        <h2>Registration Form</h2>
+        <fieldset>
+            <legend>Personal information</legend>
+            <label for="fnames">Full names:</label>
+            <input type="text" name="fnames" id="fnames" required>
+            <br>
+            <br>
+            <label for="lname">Date of birth:</label>
+            <input type="date" name="dob" id="dob" required>
+            <br>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+            <br>
+            <br>
+            <label for="gender">Gender:</label>
+            <select name="gender" id="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <br>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" minlength="6" maxlength="8" pattern="[A-Z][a-z][0-9]{8}" required>
+            <br>
+            <br>
+            <label for="password">Confirm password:</label>
+            <input type="password" name="confirm" id="confirm" minlength="6" maxlength="8" pattern="[A-Z][a-z][0-9]{8}" required>
+            <br>
+            <br>
+            <textarea name="comments" cols="40" rows="8" placeholder="Tell us a little about yourself"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Education</legend>
+            <label for="primary">Primary school:</label>
+            <input type="text" name="primary" required>
+            <br>
+            <br>
+            <label for="secondary">High school:</label>
+            <input type="text" name="secondary" required>
+            <br>
+            <br>
+            <label for="other">Other education:</label>
+            <select name="other" id="other">
+                <option value="cert">Certificate</option>
+                <option value="diploma">Diploma</option>
+                <option value="degree">Degree</option>
+            </select>
+        </fieldset>
+        <br>
+        <label for="courses">Select course you would like to study:</label>
+        <br>
+        <input type="radio" name="softeng">
+        <label for="softeng">Software Engineering</label>
+        <br>
+        <input type="radio" name="web">
+        <label for="web">Web development</label>
+        <br>
+        <input type="radio" name="database">
+        <label for="database">Database design</label>
+        <br>
+        <input type="radio" name="python">
+        <label for="python">Python programming</label>
+        <br>
+        <br>
+        <label for="courses">Select the intake you would prefer:</label>
+        <br>
+        <input type="radio" name="Jan">
+        <label for="Jan">January</label>
+        <br>
+        <input type="radio" name="May">
+        <label for="May">May</label>
+        <br>
+        <input type="radio" name="Sep">
+        <label for="Sep">September</label>
+        <br>
+        <br>
+        <button>Reset</button>
+        <button>Register</button>
+    </form>
+</body>
+</html>
